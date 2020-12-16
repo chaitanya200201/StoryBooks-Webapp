@@ -71,6 +71,8 @@ app.use(function(req, res, next) {
 //static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
+//passport.authenticate('google', {scope: 'https://www.googleapis.com/auth/plus.login'});
+
 // routes
 app.use('/', require('./routes/index'));
 app.use('/auth', require('./routes/auth'));
